@@ -177,7 +177,7 @@ class Driver:
   # Set gyroscope digital low-pass filter configuration.
   # @param mode New DLFP configuration setting
   # @see get_gyro_dlpf_mode()
-  def set_gyro_dlpf_mod(self, emode):
+  def set_gyro_dlpf_mode(self, mode):
     return self._reg_write_bits(registers.GYRO_CONF, mode, definitions.GYRO_DLPF_SEL_BIT, definitions.GYRO_DLPF_SEL_LEN)
 
   # Get accelerometer digital low-pass filter mode.
